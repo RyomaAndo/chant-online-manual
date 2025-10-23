@@ -59,7 +59,7 @@ const config: Config = {
       title: 'Chant Online Manual',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/chant.png',
+        src: 'img/CHANT.svg',
       },
       items: [
         {
