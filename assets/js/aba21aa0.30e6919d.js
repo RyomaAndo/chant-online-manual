@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkrisk_list_detailed_manual=globalThis.webpackChunkrisk_list_detailed_manual||[]).push([[742],{7093:a=>{a.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
