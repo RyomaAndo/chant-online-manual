@@ -1,0 +1,67 @@
+---
+sidebar_label: '実費の売上取消'
+title: '実費の売上取消'
+---
+
+## 概要
+
+過去に利用料項目で登録した実費請求を取消するための操作です。
+この操作では、**過去に請求したものと同一の利用料項目**を使用して請求を作成します。
+
+## 注意事項
+
+-   操作を行う前に、対象となる年月、利用料項目、そして取消す金額を正確に把握しておいてください。
+
+## 操作手順
+
+「**10月に請求した2,500円を取消**」を例にして具体的な操作手順を示します。  
+この例では、外税の項目を使用しているため、修正前の売上報告書では**金額2,750円、税額250円**となっています。
+
+<div>
+  <img src={require('./torikesi_zippi_img/01_base-input.png').default} alt="登録画面" />
+  <br/>
+  <img src={require('./torikesi_zippi_img/02_base-output.png').default} alt="売上報告書" />
+</div>
+
+### 1.利用料訂正画面を開く
+
+請求 > 利用料請求から「請求書作成」を開きます。
+
+<img src={require('./torikesi_zippi_img/03_riyoryo.png').default} alt="利用料請求書作成" />
+
+### 2. 対象のお客様の利用料請求書訂正画面を開く
+
+未作成の場合、11月の利用料請求書を作成し、対象のお客様を選択した状態で訂正をクリックします。
+
+<img src={require('./torikesi_zippi_img/04_teisei.png').default} alt="利用料訂正"/>
+
+### 3. 訂正したい利用料項目を追加する
+
+「行追加」ボタンをクリックし、利用料項目を追加します。
+
+<img src={require('./torikesi_zippi_img/05_add.png').default} alt="行追加" />
+
+### 4. 差額を入力する
+
+* 利用年月に訂正したい年月(今回の例では10月)を選択します。  
+* 利用料項目は修正したい対象の項目を選択します。  
+* 金額欄に、取消したい**総額分**を入力します。  
+（例：2,500円で請求していた場合、「-2,500」と入力します）  
+* 入力内容に誤りがないことを確認し、「設定」ボタンをクリックします。
+
+<img src={require('./torikesi_zippi_img/06_toroku.png').default} alt="差額登録" />
+
+### 5. 訂正金額の反映を売上報告書で確認
+
+本部送信後、請求年月11月、サービス提供年月10月で売上報告書を出力すると、  
+金額訂正が反映されて、訂正後の売上報告書では**金額0円、税額0円**が表示されます。  
+
+<div style={{textAlign: 'center'}}>
+  <img src={require('./torikesi_zippi_img/07_seikyu.png').default} alt="登録画面" />
+  <br/>
+  <img src={require('./torikesi_zippi_img/08_urihou.png').default} alt="売上報告書" />
+</div>
+
+---
+
+以上で操作は完了です。
