@@ -39,7 +39,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/', 
+          routeBasePath: '/docs', 
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,8 +63,7 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs',
           position: 'left',
           label: 'ワイズマン請求関連',
         },
@@ -78,12 +77,12 @@ const config: Config = {
           items: [
             {
               label: 'ワイズマン請求関連',
-              to: '/',
+              to: '/docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SAINT-CARE HOLDING CORPORATION. All Rights Reserved.`,
+      copyright: `${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,
